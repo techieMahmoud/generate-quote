@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Quote Generator</title>
+    <script type='text/javascript'>
+        window.smartlook || (function (d) {
+            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+            c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', '3edada534dbf76eed689c4697b0c425ce31908d7', { region: 'eu' });
+    </script>
 </head>
+
 <body>
     <div class="quote-container" id="quote-container">
         <!-- Quote -->
@@ -15,7 +25,7 @@
             <i class="fas fa-quote-left"></i>
             <span id="quote"></span>
         </div>
-         <!-- Author -->
+        <!-- Author -->
         <div class="quote-author">
             <span id="author"></span>
         </div>
@@ -31,4 +41,5 @@
     <!-- Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
